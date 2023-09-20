@@ -37,8 +37,8 @@ const Home = () => {
             exit='hidden'
             className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'
           >
-            Looking for a FullStack web development specialist? With a degree in Computer Engineering and extensive experience in technologies such as React.JS, React Native, and Next.JS, I'm here to turn your ideas into innovative digital solutions.
-            If you're looking for a dedicated, experienced, and passionate professional, get in touch. Let's together transform your vision into a impactful digital reality!
+            Looking for a FullStack web development specialist? With a degree in Computer Engineering and extensive experience in technologies such as React.JS, React Native, and Next.JS, I&apos;m here to turn your ideas into innovative digital solutions.
+            If you&apos;re looking for a dedicated, experienced, and passionate professional, get in touch. Let&apos;s together transform your vision into a impactful digital reality!
           </motion.p>
           {/* btn */}
           <div className='flex justify-center xl:hidden relative'>
