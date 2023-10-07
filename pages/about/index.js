@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-key */
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 // icons
 import {
@@ -9,22 +9,22 @@ import {
   FaReact,
   FaWordpress,
   FaFigma,
-} from 'react-icons/fa';
+} from "react-icons/fa";
 
 import {
   SiNextdotjs,
   SiFramer,
   SiAdobexd,
   SiAdobephotoshop,
-} from 'react-icons/si';
+} from "react-icons/si";
 
 // about data
 const aboutData = [
   {
-    title: 'skills',
+    title: "skills",
     info: [
       {
-        title: 'Web Development',
+        title: "Web Development",
         icons: [
           <FaHtml5 />,
           <FaCss3 />,
@@ -36,187 +36,202 @@ const aboutData = [
         ],
       },
       {
-        title: 'UI/UX Design',
+        title: "UI/UX Design",
         icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
       },
     ],
   },
   {
-    title: 'awards',
+    title: "awards",
     info: [
       {
-        title: 'UNIFESSPA Awards - HONOR',
-        stage: '2022',
+        title: "UNIFESSPA Awards - HONOR",
+        stage: "2022",
       },
       {
-        title: 'Rocketseat Challenger - Finalist',
-        stage: '2022',
+        title: "Rocketseat Challenger - Finalist",
+        stage: "2022",
       },
     ],
   },
   {
-    title: 'experience',
+    title: "experience",
     info: [
-        {
-        title: 'FullStack Developer - Ctech',
-        stage: '2023',
+      {
+        title: "FullStack Developer - Ctech",
+        stage: "2023",
       },
       {
-        title: 'Developer - Secretaria de Saúde',
-        stage: '2020 - 2023',
+        title: "Developer - Secretaria de Saúde",
+        stage: "2020 - 2023",
       },
       {
-        title: 'FullStack Developer - Bits.jr',
-        stage: '2019 - 2020',
+        title: "FullStack Developer - Bits.jr",
+        stage: "2019 - 2020",
       },
     ],
   },
   {
-    title: 'credentials',
+    title: "credentials",
     info: [
       {
-        title: 'Computer Engineering  - UNIFESSPA',
-        stage: '2023',
+        title: "Computer Engineering  - UNIFESSPA",
+        stage: "2023",
       },
       {
-        title: 'Certified The Complete Bootcamp Web - Dr. Angela Yu',
-        stage: '2023',
+        title: "Certified The Complete Bootcamp Web - Dr. Angela Yu",
+        stage: "2023",
       },
       {
-        title: 'Certified Dev Samurai - Dev Samurai',
-        stage: '2022',
+        title: "Certified Dev Samurai - Dev Samurai",
+        stage: "2022",
       },
       {
-        title: 'Certified Modern Web Course - COD3R',
-        stage: '2021',
+        title: "Certified Modern Web Course - COD3R",
+        stage: "2021",
       },
-
     ],
   },
 ];
 
 // components
-import Avatar from '../../components/Avatar';
-import Circles from '../../components/Circles';
+import Avatar from "../../components/Avatar";
+import Circles from "../../components/Circles";
 
 // framer motion
-import { motion } from 'framer-motion';
-import { fadeIn } from '../../variants';
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variants";
 
 // counter
-import CountUp from 'react-countup';
+import CountUp from "react-countup";
 
 const About = () => {
   const [index, setIndex] = useState(0);
   return (
-    <div className='h-full bg-primary/30 py-32 text-center xl:text-left'>
+    <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
       <Circles />
       {/* avatar img */}
       <motion.div
-        variants={fadeIn('right', 0.2)}
-        initial='hidden'
-        animate='show'
-        exit='hidden'
-        className='hidden xl:flex absolute bottom-0 -left-[270px]'
-      >
+        variants={fadeIn("right", 0.2)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        className="hidden xl:flex absolute bottom-0 -left-[270px]">
         <Avatar />
       </motion.div>
-      <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6'>
+      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         {/* text */}
-        <div className='flex-1 flex flex-col justify-center'>
+        <div className="flex-1 flex flex-col justify-center">
           <motion.h2
-            variants={fadeIn('right', 0.2)}
-            initial='hidden'
-            animate='show'
-            exit='hidden'
-            className='h2'
-          >
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="h2">
             Captivating
-            <span className='text-accent'>stories</span> birth magnificent designs.
+            <span className="text-accent">stories</span> birth magnificent
+            designs.
           </motion.h2>
           <motion.p
-            variants={fadeIn('right', 0.4)}
-            initial='hidden'
-            animate='show'
-            exit='hidden'
-            className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>
-            2 years ago, I began freelancing as a developer, Since then, I&apos;ve done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I&apos;m quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.
+            variants={fadeIn("right", 0.4)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 sm:block hidden">
+            2 years ago, I began freelancing as a developer, Since then,
+            I&apos;ve done remote work for agencies, consulted for startups, and
+            collaborated with talented people to create digital products for
+            both business and consumer use. I&apos;m quietly confident,
+            naturally curious, and perpetually working on improving my chops one
+            design problem at a time.
           </motion.p>
           {/* counters */}
           <motion.div
-            variants={fadeIn('right', 0.2)}
-            initial='hidden'
-            animate='show'
-            exit='hidden'
-            className='hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8'
-          >
-            <div className='flex flex-1 xl:gap-x-6'>
-            {/* experience */}
-            <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
-                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8">
+            <div className="flex flex-1 xl:gap-x-6">
+              {/* experience */}
+              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={2} duration={7} /> +
                 </div>
-                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'> Years of experience</div>
-            </div>
-            {/* clients */}
-            <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
-                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                  {" "}
+                  Years of experience
+                </div>
+              </div>
+              {/* clients */}
+              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={17} duration={7} /> +
                 </div>
-                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'> Satisfied clients</div>
-            </div>
-            {/* projects */}
-            <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
-                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                  {" "}
+                  Satisfied clients
+                </div>
+              </div>
+              {/* projects */}
+              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={20} duration={7} /> +
                 </div>
-                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'> Finished projects</div>
-            </div>
-            {/* awards */}
-            <div className='relative flex-1 '>
-                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                  {" "}
+                  Finished projects
+                </div>
+              </div>
+              {/* awards */}
+              <div className="relative flex-1 ">
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={2} duration={7} /> +
                 </div>
-                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'> Winning awards</div>
-            </div>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                  {" "}
+                  Winning awards
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>
         {/* info */}
         <motion.div
-          variants={fadeIn('left', 0.4)}
-          initial='hidden'
-          animate='show'
-          exit='hidden'
-          className='flex flex-col w-full xl:max-w-[48%] h-[480px]'
-        >
-          <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'>
+          variants={fadeIn("left", 0.4)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="flex flex-col w-full xl:max-w-[48%] h-[480px]">
+          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => {
               return (
                 <div
                   key={itemIndex}
-                  className={`${ index === itemIndex && 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'
-                    } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
-                  onClick={() => setIndex(itemIndex)}
-                >
+                  className={`${
+                    index === itemIndex &&
+                    "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
+                  } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
+                  onClick={() => setIndex(itemIndex)}>
                   {item.title}
                 </div>
               );
             })}
           </div>
-          <div className='py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start'>
+          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
             {aboutData[index].info.map((item, itemIndex) => {
               return (
-                <div key={itemIndex} className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'
-                >
+                <div
+                  key={itemIndex}
+                  className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60">
                   {/* title */}
-                  <div className='font-light mb-2 md:mb-0'>{item.title}</div>
-                  <div className='hidden md:flex'>-</div>
-                  <div className=''>{item.stage}</div>
-                  <div className='flex gap-x-4'>
+                  <div className="font-light mb-2 md:mb-0">{item.title}</div>
+                  <div className="hidden md:flex">-</div>
+                  <div className="">{item.stage}</div>
+                  <div className="flex gap-x-4">
                     {/* icons */}
                     {item.icons?.map((icon, itemIndex) => {
-                      return <div className='text-2xl text-white'>{icon}</div>;
+                      return <div className="text-2xl text-white">{icon}</div>;
                     })}
                   </div>
                 </div>
