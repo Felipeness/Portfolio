@@ -5,21 +5,21 @@ export const testimonialSlider = [
     name: "Marina Furtado",
     position: "Manager",
     message:
-      "Escolher o Felipe para nossa solução digital foi a decisão mais acertada. Ele tem uma habilidade única de mesclar design intuitivo com as mais recentes tendências de desenvolvimento web. O resultado final foi uma plataforma que não apenas reflete nossa marca, mas também oferece uma experiência de usuário excepciona",
+      "Escolher o Felipe para nossa solução digital foi a decisão mais acertada. Ele tem uma habilidade única de mesclar design intuitivo com as mais recentes tendências de desenvolvimento web.",
   },
   {
     image: "/T-avt-2-removebg.png",
     name: "Moises",
     position: "Company Owner",
     message:
-      "No mundo do desenvolvimento web, Felipe se destaca como um verdadeiro inovador. Sua paixão e dedicação ao nosso projeto web foram evidentes em cada etapa. Ele não apenas capturou nossa visão, mas a elevou com sua expertise em design e funcionalidade. Uma escolha certa para quem busca qualidade!",
+      "No mundo do desenvolvimento web, Felipe se destaca como um verdadeiro inovador. Sua paixão e dedicação ao nosso projeto web foram evidentes em cada etapa.",
   },
   {
     image: "/t-avt-3.png",
     name: "Uriel",
     position: "CustomerCivil Engineer",
     message:
-      "No competitivo mercado de desenvolvimento web, a visão do Felipe é um verdadeiro game-changer. Sua abordagem técnica e centrada no cliente resultou em uma solução web que superou todas as nossas expectativas. Se você está buscando um desenvolvedor que entrega inovação e eficiência, ele é a escolha perfeita!",
+      "No competitivo mercado de desenvolvimento web, a visão do Felipe é um verdadeiro game-changer. Sua abordagem técnica e centrada no cliente resultou em uma solução web que superou expectativas.",
   },
 ];
 
@@ -56,11 +56,11 @@ const TestimonialSlider = () => {
               <div className="w-full max-w-[300px] flex flex-col xl:justify-center items-center relative mx-auto xl:mx-0">
                 <div className="flex flex-col justify-center text-center">
                   {/* avatar */}
-                  <div className="mb-2 mx-auto">
+                  <div className="mb-1 mx-auto">
                     <Image
                       src={person.image}
-                      width={140}
-                      height={140}
+                      width={100}
+                      height={100}
                       alt=""
                       className="rounded-ful"
                     />
