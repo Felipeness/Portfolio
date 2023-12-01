@@ -128,9 +128,8 @@ const About = () => {
             animate="show"
             exit="hidden"
             className="h2">
-            Captivating
-            <span className="text-accent">stories</span> birth magnificent
-            designs.
+            Captivating <span className="text-accent">stories</span> birth
+            magnificent designs.
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
@@ -138,7 +137,7 @@ const About = () => {
             animate="show"
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 sm:block hidden">
-            2 years ago, I began freelancing as a developer, Since then,
+            4 years ago, I began freelancing as a developer, Since then,
             I&apos;ve done remote work for agencies, consulted for startups, and
             collaborated with talented people to create digital products for
             both business and consumer use. I&apos;m quietly confident,
@@ -156,7 +155,7 @@ const About = () => {
               {/* experience */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={2} duration={7} /> +
+                  <CountUp start={0} end={4} duration={7} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   {" "}
