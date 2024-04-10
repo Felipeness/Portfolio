@@ -23,7 +23,7 @@ const Socials = () => {
       <Link href={'https://www.instagram.com/felipe.ness/'} className='hover:text-accent transition-all duration-300'>
         <RiInstagramLine />
       </Link>
-      <Link href={'https://contate.me/engenheiro-software-felipe'} className='hover:text-accent transition-all duration-300'>
+      <Link href={'https://api.whatsapp.com/send?phone=+5594984044008&text=Ol%C3%A1+Felipe%2C+gostaria+de+solicitar+um+or%C3%A7amento+para+um+projeto.'} className='hover:text-accent transition-all duration-300'>
         <RiWhatsappLine />
       </Link>
   </div>
